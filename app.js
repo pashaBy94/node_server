@@ -13,7 +13,7 @@ function dataSubmit(request, respons){
     });
     console.log(outMessag);
     respons.statusCode = 200;
-    respons.setHeader('Content-Type', 'text/plain');
+    respons.setHeader('Content-Type', 'application/json');
     respons.end(outMessag);
   });
 }
