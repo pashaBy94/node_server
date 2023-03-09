@@ -5,7 +5,7 @@ function dataSubmit(request, respons){
   let data = '';
   request.on('data', el => data += el);
   request.on('end', ()=>{
-    // let inMessag = JSON.parse(data);
+    let inMessag = JSON.parse(data);
     console.log(data);
     let outMessag = JSON.stringify({
       title: 'Hello',
