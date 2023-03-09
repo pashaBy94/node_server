@@ -9,7 +9,7 @@ let response = await fetch('http://localhost:4000/', {
   mode: "no-cors",
   method: 'POST',
 headers:{
-  'Content-Type':'text/plain',
+  'Content-Type':'application/json',
 },
 body: JSON.stringify(user),
 });
